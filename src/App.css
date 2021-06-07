@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main_container
+{
+  /* background-color:green; */
+  height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+}
+
+p
+{
+  font-size: 30px;
+  color: rgb(55, 54, 54);
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: underline;
+  
+}
+.sec_container
+{
+  /* background-color:green; */
+  height: 550px;
+  width: 90%;
+  overflow: scroll;
+  border: 2px solid #1C77B6;
+}
+
+.table_container
+{
+  background-color:white;
+  /* border: black 1px solid; */
+  width: max-content;
+
+  /* width: 20%; */
+}
+
+.table_row
+{
+  margin-bottom: 5px;
+}
+
+.table_column_head
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color:  rgb(84, 95, 119);
   color: white;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.table_column
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  /* background-color: lightgray; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.table_container tr:nth-child(even){background-color: #e1dede; color: black;  }
+.table_container tr:nth-child(odd){background-color: rgb(136, 137, 141);color: black; }
