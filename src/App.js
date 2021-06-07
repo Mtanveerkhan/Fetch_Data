@@ -75,21 +75,7 @@ export default class App extends Component {
                     <td className={'table_column'}>{value.recordprocessed}</td>
                     <td className={'table_column'}>{value.sourceId}</td>
                     <td className={'table_column'}>{value.targetId}</td>
-                    {/* <td >{value.id}</td>
-                    <td >{value.name}</td>
-                    <td >{value.startAt}</td>
-                    <td  >{value.endAt}</td>
-                    <td >{value.created_at}</td>
-                    <td >{value.updated_at}</td>
-                    <td >{value.status}</td>
-                    <td >{value.nextExecuteAt}</td>
-                    <td >{value.lastExecuteAt}</td>
-                    <td >{value.frequency}</td>
-                    <td >{value.batchprocessed}</td>
-                    <td >{value.pipelineprocessed}</td>
-                    <td >{value.recordprocessed}</td>
-                    <td >{value.sourceId}</td>
-                    <td >{value.targetId}</td> */}
+                    
 
                   </tr>
             
@@ -97,13 +83,6 @@ export default class App extends Component {
               })}
 
           </table>
-
-
-          {/* <div className={'list'} key={index}>
-            <span>{value.id}
-              - {value.created_by.ID} 
-            </span> 
-          </div> */}
         </div>
         </div>
       
