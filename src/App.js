@@ -13,23 +13,23 @@ export default class App extends Component {
 
   componentDidMount() {
     const url = 'http://142.93.6.122:8000/integration'
+    const headers = {
+      'Content-Type': 'application/json',
+      'Authorization': 'token 8926bed745d458b22bc6a140b0362a8fc2aeae7b'
+    }
     const param = {
-      method: 'GET', headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'token 8926bed745d458b22bc6a140b0362a8fc2aeae7b'
-      },
+      method: 'GET', headers: headers,
     }
     fetch(url, param)
       .then(response => response.json())
       .then(data =>
-
-        // console.log(data.results),
+        console.log(data.results,'results'),
         this.setState({ fetched_data: data.results })
       );
   }
 
   render() {
-    console.log("Aya k nhe aya = " + this.state.fetched_data)
+    // console.log("Aya k nhe aya = " + this.state.fetched_data)
     return (
       
       <div className={'main_container'}>
